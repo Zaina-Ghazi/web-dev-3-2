@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!--default character coding used to display HTML page perfectly -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!-- meta tag forces Internet Explorer to use the newest rendering engine available on the user's computer, rather than older compatibility modes-->
+    <!--viewport is the area of the window which web content can be seen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
+    <title>Zaina Ghazi's Portfolio in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="portfolio_imgs/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring UI/UX Designer</p>
+            <h1 style="font-weight: bolder;">Hi there! I'm <span>Zaina</span><br>Ghazi of BSIT 3-2.</h1>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------------about--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="portfolio_imgs/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! My name's Zaina E. Ghazi, but I like being referred to as Zayne for short. Before coming
+                to PUP-QC, I spent my high school years studying and finally graduated from the International 
+                Philippine School in Jeddah, AKA IPSJ. I basically lived all my life in Saudi Arabia before leaving
+                to the Philippines for college, and I hope that once I graduate and get a decent job, I'll be able 
+                to travel to bigger, greater places someday, learn lots of lessons and meet awesome people along the way!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('contacts')">Contacts</p>
+                    <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="contacts">
+                    <ul>
+                        <li><span>Facebook</span><br>
+                            <div class="fb">
+                                <a href="https://www.facebook.com/profile.php?id=100077086691693&mibextid=LQQJ4d" target="_blank">Zaina Ghazi</a></li>
+                        <li><span>Twitter</span><br>
+                            <div class="twt">
+                                <a href="https://x.com/zigha_zayn" target="_blank">🌼ziggy🌼</a></li>
+                        <li><span>Gitub</span><br>
+                            <div class="git">
+                                <a href="https://github.com/Zaina-Ghazi" target="_blank">Zaina-Ghazi</a></li>
+                        <li><span>Gmail</span><br>
+                            <div class="gmail">
+                                <a href="mailto:zaina3ghazi@gmail.com" target="_blank">Zaina Escarcha Ghazi</a></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="interests">
+                    <ul>
+                        <li><span>Drawing!</span><br>Digital or traditional, drawing is my lifetime passion!
+                        I draw what I like and how I feel, because it's how I express myself.</li>
+                        <li><span>Skating!</span><br>I like to go both on rollerblades and on ice, and listening to music
+                        while I glide across just feels awesome! I hope to do that again someday...</li>
+                        <li><span>Video Games!</span><br>One of my main inspirations to drawing in the first place! 
+                        If you can't tell, I absoulutely love a lot of Sonic games, and other games like Resident Evil, Tekken (very bad at it though...), and Minecraft.</li>
+                        <li><span>Design!</span><br>Can't say I want to be a designer if I don't like designing at all, right?
+                        I dream that maybe someday I can design and help develop a video game of my own characters! preferably horror too...</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Website/Web App interfaces</li>
+                        <li><span>Digital Art</span><br>Freelancing and Character art - Fanart or Original Characters</li>
+                        <li><span>Graphic Design</span><br>Designing Posters, Brochures, and Infographics</li>
+                        <li><span>Basic Programming</span><br>Mainly Python, but also learning C# and Javascript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------------------------------portfolio------------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title" align="center">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/portfolio_imgs/work-1.png">
+                <div class="layer">
+                    <h3>Greenville: Eco Explorers</h3>
+                    <p>Take a peek at my small gallery of stuff done in this game that uses the RPGMaker MZ engine for my Free Electives 1 project!</p>
+                    <a href="https://drive.google.com/drive/folders/1Rdc-pbtPihDETwLYjdPMkXjIDvGnWQCK?usp=sharing" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/portfolio_imgs/work-2.png">
+                <div class="layer">
+                    <h3>FinanceFlow: Income & Expense Management System</h3>
+                    <p>This is a group project in Information Management where I was tasked as a front-end developer, while handling some back-end work as well. Take a look at this little gallery!</p>
+                    <a href="https://drive.google.com/drive/folders/1iAodYoBHLPlZsx7DcC6Xpvp2Nj_OGbUm?usp=sharing" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/portfolio_imgs/work-3.png">
+                <div class="layer">
+                    <h3>My Resume in HTML</h3>
+                    <p>This was an assignment I had prior to this project. Very basic, but it's honest work! Check it out!</p>
+                    <a href="Ghazi_Activity_2.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
